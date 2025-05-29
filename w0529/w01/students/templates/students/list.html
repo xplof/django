@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="">
+      <table>
+         <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전공</th>
+            <th>나이</th>
+         </tr>
+         {% for s in list%}
+         <tr>
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.major}}</td>
+            <td>{{s.age}}</td>
+         </tr>
+         {%endfor%}
+      </table>
+   </form>
+</body>
+</html>
